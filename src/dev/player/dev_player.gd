@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var speed := 500
+@export var speed := 400
 #This value is a joke / so I could tell that sprint was actually working
-@export var sprint_diff := 1000
+@export var sprint_diff := 250
 #These two can be any type of node we decide fits best for items when we make those scenes
 @export var items: Array[Node2D] = []
 @export var active_item: Array[Node2D] = []
