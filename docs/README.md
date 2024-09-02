@@ -25,6 +25,9 @@ Welcome to the Chrono Crusaders project! This section provides an overview of th
 ## Project Structure
 
 Here’s an overview of the project's directory structure:
+---
+
+## Assets
 
 ```plaintext
 ChronoCrusaders/
@@ -38,8 +41,6 @@ ChronoCrusaders/
 │   ├── icons/
 │   └── fonts/
 ```
-
-## Assets
 
 **`assets/`**: Contains all media assets used in the game.
 
@@ -59,6 +60,8 @@ ChronoCrusaders/
 
 ---
 
+## Maps
+
 ```plaintext
 ChronoCrusaders/
 ├── maps/
@@ -71,8 +74,24 @@ ChronoCrusaders/
 │   ├── pause_menu.tscn
 │   └── game_over.tscn
 ```
-
 ## Maps
+
+**`maps/`**: Contains map-related files and scripts for procedural map generation.
+
+- **`generated/`**: Directory for maps that are dynamically generated during gameplay.
+  - **Purpose**: Stores maps created on-the-fly based on game logic or user actions.
+
+- **`templates/`**: Contains map templates and layout definitions.
+  - **Purpose**: Holds predefined map layouts and configurations that can be used as a basis for generated maps or manually designed levels.
+
+- **`map_generator.py`**: Script for procedural map generation.
+  - **Purpose**: Contains the logic and algorithms used to generate maps dynamically during gameplay.
+
+[Back to Table of Contents](#table-of-contents)
+
+---
+
+## Codebase
 
 ```plaintext
 ChronoCrusaders/
@@ -106,8 +125,6 @@ ChronoCrusaders/
 ├── README.md
 └── project.godot
 ```
-
-## Codebase
 
 **`src/`**: Contains the source code for the game.
 
