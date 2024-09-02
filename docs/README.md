@@ -26,7 +26,7 @@ Welcome to the Chrono Crusaders project! This section provides an overview of th
 
 
 
-## Assets
+# Assets
 
 ```plaintext
 ChronoCrusaders/
@@ -59,7 +59,7 @@ ChronoCrusaders/
 
 ---
 
-## Maps
+# Maps
 
 ```plaintext
 ChronoCrusaders/
@@ -73,7 +73,6 @@ ChronoCrusaders/
 │   ├── pause_menu.tscn
 │   └── game_over.tscn
 ```
-## Maps
 
 **`maps/`**: Contains map-related files and scripts for procedural map generation.
 
@@ -90,7 +89,7 @@ ChronoCrusaders/
 
 ---
 
-## Codebase
+# Codebase
 
 ```plaintext
 ChronoCrusaders/
