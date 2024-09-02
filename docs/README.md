@@ -55,7 +55,9 @@ ChronoCrusaders/
 - **`icons/`**: Icons used in UI and other parts of the game.
 
 - **`fonts/`**: Fonts used throughout the game.
+[Back to Table of Contents](#table-of-contents)
 
+---
 
 ├── maps/
 │   ├── generated/
