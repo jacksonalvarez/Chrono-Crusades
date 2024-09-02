@@ -1,8 +1,18 @@
 # Source Code Folder
 
-This folder contains all the source code for the game.
+This folder contains all the source code for the game. There are different environments for different phases of launch/version release.
 
-## Structure
+## Release Stages
+
+| **Stage**       | **Description**                                                                                  |
+|-----------------|--------------------------------------------------------------------------------------------------|
+| **DEV**         | Development stage where new features and major changes are actively worked on and tested internally. |
+| **ALPHA**       | Initial testing phase where the game is feature-complete but still undergoing internal testing for bugs and stability. |
+| **BETA**        | Public testing phase where a wider audience is invited to test the game. Feedback is gathered to identify and fix issues before the final release. |
+| **USER-TEST**   | Focused testing phase where specific aspects of the game are tested by targeted user groups to refine features and usability. |
+| **Final-DEV**   | Final development stage where the game is polished, bugs are fixed, and preparation for release is completed. |
+| **Release**     | Official release of the game to the public. The game is considered stable and ready for general use. |
+| **Updates**     | Post-release phase where ongoing support, patches, and new features are introduced based on user feedback and emerging issues. |
 
 - **core/**: Contains core game logic and main controllers.
   - **game_controller.py**: Manages the overall game state, including starting and ending the game.
