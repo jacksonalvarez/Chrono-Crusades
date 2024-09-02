@@ -37,6 +37,24 @@ ChronoCrusaders/
 │   │   └── tilesets/
 │   ├── icons/
 │   └── fonts/
+## Assets
+
+**`assets/`**: Contains all media assets used in the game.
+
+- **`audio/`**: Contains sound effects and background music files.
+  - **Files**: Typically `.wav`, `.mp3`
+
+- **`sprites/`**: All sprite images, organized into subdirectories:
+  - **`players/`**: Sprites for player characters.
+  - **`enemies/`**: Sprites for enemy characters.
+  - **`items/`**: Sprites for items.
+  - **`tilesets/`**: Tilesets used for creating maps.
+
+- **`icons/`**: Icons used in UI and other parts of the game.
+
+- **`fonts/`**: Fonts used throughout the game.
+
+
 ├── maps/
 │   ├── generated/
 │   ├── templates/
@@ -75,3 +93,6 @@ ChronoCrusaders/
 ├── .gitattributes
 ├── README.md
 └── project.godot
+
+
+
