@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c2eb0qqqide16"]
 
-[ext_resource type="Script" path="res://src/dev/generation/WFC.cs" id="1_5n3c8"]
+[ext_resource type="Script" path="res://src/dev/generation/TileMapGen.cs" id="1_5n3c8"]
 [ext_resource type="Texture2D" uid="uid://c4dmfs58r0fhh" path="res://assets/sprites/baseTileset.png" id="1_prbv4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_if6wh"]
@@ -13,7 +13,7 @@ texture = ExtResource("1_prbv4")
 [sub_resource type="TileSet" id="TileSet_o8nvw"]
 sources/0 = SubResource("TileSetAtlasSource_if6wh")
 
-[node name="WFC_Grid" type="TileMap"]
+[node name="WFC_Grid" type="TileMapLayer"]
+scale = Vector2(2, 2)
 tile_set = SubResource("TileSet_o8nvw")
-format = 2
 script = ExtResource("1_5n3c8")

@@ -2,27 +2,35 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
-public class TileMapGen : TileMap
+public partial class TileMapGen : TileMapLayer
 {
 	private Dictionary<string, int> tileTypeToId = new Dictionary<string, int>
 	{
 		{"grass", 0},
 		{"sand", 1},
 		{"water", 2},
-		{"ext_wall", 3}
+		{"path", 3}
+	};
+	
+	private List<Vector2I> atlasCoords = new List<Vector2I>
+	{
+		new Vector2I(0, 0),
+		new Vector2I(1, 1),
+		new Vector2I(0, 1),
+		new Vector2I(1, 0)
 	};
 
 	public override void _Ready()
 	{
 		List<Tile> allTiles = new List<Tile>
 		{
-			new Tile("grass", new List<string> {"grass", "sand", "ext_wall"}),
-			new Tile("sand", new List<string> {"grass", "water"}),
-			new Tile("water", new List<string> {"water", "sand"}),
-			new Tile("ext_wall", new List<string> {"grass"})
+			new Tile("grass", new List<string> {"grass", "sand", "path", "water"}),
+			new Tile("sand", new List<string> {"sand", "grass", "water"}),
+			new Tile("water", new List<string> {"sand", "grass"}),
+			new Tile("path", new List<string> {"grass", "path"})
 		};
 
-		Grid grid = new Grid(10, 10, allTiles);
+		Grid grid = new Grid(100, 50, allTiles);
 		WFC wfc = new WFC(grid);
 		wfc.Collapse();
 
@@ -46,7 +54,7 @@ public class TileMapGen : TileMap
 		if (tileTypeToId.ContainsKey(tile.Type))
 		{
 			int tileId = tileTypeToId[tile.Type];
-			SetCell(x, y, tileId);
+			SetCell(new Vector2I(x, y), 0, atlasCoords[tileId]);
 		} 
 		else
 		{
@@ -86,6 +94,7 @@ public class Grid
 			}
 		}
 	}
+
 }
 
 public class WFC
@@ -106,8 +115,8 @@ public class WFC
 			if (cell == null)
 				break;
 
-			CollapseCell(cell);
-			Propagate(cell);
+			CollapseCell(cell.Value);
+			Propagate(cell.Value);
 		}
 	}
 
@@ -151,14 +160,15 @@ public class WFC
 		while (q.Count > 0)
 		{
 			var (x, y) = q.Dequeue();
+Console.WriteLine(grid.Cells[x, y].Count);
 			var currentTile = grid.Cells[x, y][0];
-
+			
 			var neighbors = GetNeighbors(x, y);
 			foreach (var (nx, ny) in neighbors)
 			{
 				var possibleTiles = grid.Cells[nx, ny];
 				int originalCount = possibleTiles.Count;
-
+//Console.WriteLine(nx + "==" + ny);
 				possibleTiles.RemoveAll(tile => !tile.AllowedNeighbors.Contains(currentTile.Type));
 
 				if (possibleTiles.Count != originalCount)
@@ -179,8 +189,10 @@ public class WFC
 			neighbors.Add((x + 1, y));
 		if (y > 0) 
 			neighbors.Add((x, y - 1));
-		if (y < grid.Height)
+		if (y < grid.Height - 1)
 			neighbors.Add((x, y + 1));
+		//foreach (var (nx, ny) in neighbors)
+		//	Console.WriteLine(nx + "==" + ny);
 
 		return neighbors;
 	}

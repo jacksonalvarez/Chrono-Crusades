@@ -18,6 +18,8 @@ offset_right = 1965.0
 offset_bottom = 1094.0
 color = Color(0.114416, 0.629912, 0.591488, 1)
 
+[node name="WFC_Grid" parent="." instance=ExtResource("2_j637a")]
+
 [node name="Barriers" type="Node2D" parent="."]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Barriers"]
@@ -39,5 +41,4 @@ position = Vector2(-20, 540)
 shape = SubResource("RectangleShape2D_bkte5")
 
 [node name="Player" parent="." instance=ExtResource("1_1nxec")]
-
-[node name="WFC_Grid" parent="." instance=ExtResource("2_j637a")]
+scale = Vector2(0.75, 0.75)
