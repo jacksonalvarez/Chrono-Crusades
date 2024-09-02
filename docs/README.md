@@ -76,10 +76,10 @@ ChronoCrusaders/
 ```
 
 ---
-##BREAKDOWN OF FILE STRUCT::
+## Breakdown of the file Structure
 ---
 
-# Assets
+#### Assets
 
 ```plaintext
 ChronoCrusaders/
@@ -112,7 +112,7 @@ ChronoCrusaders/
 
 ---
 
-# Maps
+#### Maps
 
 ```plaintext
 ChronoCrusaders/
@@ -142,7 +142,7 @@ ChronoCrusaders/
 
 ---
 
-# Codebase
+#### Codebase
 
 ```plaintext
 ChronoCrusaders/
