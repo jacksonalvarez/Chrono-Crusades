@@ -68,6 +68,9 @@ ChronoCrusaders/
 │   ├── gameplay.tscn
 │   ├── pause_menu.tscn
 │   └── game_over.tscn
+
+---
+
 ├── src/
 │   ├── core/
 │   │   ├── game_controller.py
@@ -97,6 +100,39 @@ ChronoCrusaders/
 ├── .gitattributes
 ├── README.md
 └── project.godot
+
+## Codebase
+
+**`src/`**: Contains the source code for the game.
+
+- **`core/`**: Core game logic files.
+  - **`game_controller.py`**: Manages overall game state.
+  - **`entity_handler.py`**: Handles entities (players, enemies, items).
+
+- **`entities/`**: Definitions for various game entities.
+  - **`player.py`**: Player class and related logic.
+  - **`enemy.py`**: Enemy class and related logic.
+  - **`item.py`**: Item class and related logic.
+
+- **`systems/`**: Game systems for AI, inventory, and combat.
+  - **`ai_system.py`**: AI logic for enemies.
+  - **`inventory_system.py`**: Manages item inventories.
+  - **`combat_system.py`**: Handles combat mechanics.
+
+- **`utilities/`**: Utility scripts and helpers.
+  - **`math_utils.py`**: Mathematical utilities.
+  - **`file_utils.py`**: File handling utilities.
+
+- **`config/`**: Configuration files.
+  - **`game_settings.json`**: General game settings.
+  - **`controls.json`**: Player control mappings.
+
+- **`docs/`**: Contains documentation related to the project.
+  - **`design.md`**: Design documents outlining the game's design principles and considerations.
+  - **`architecture.md`**: Architecture overview detailing the system design and structure.
+  - **`user_manual.md`**: User manual providing instructions and information for end-users.
+
+[Back to Table of Contents](#table-of-contents)
 
 
 
