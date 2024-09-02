@@ -26,52 +26,57 @@ Welcome to the Chrono Crusaders project! This section provides an overview of th
 
 Here’s an overview of the project’s directory structure:
 
-| Directory/File      | Description                               |
-|---------------------|-------------------------------------------|
-| **assets/**         | All media assets                          |
-| ├── audio/          | Sound effects and background music        |
-| ├── sprites/        | All sprite images                         |
-| │   ├── players/    | Player sprites                             |
-| │   ├── enemies/    | Enemy sprites                              |
-| │   ├── items/      | Item sprites                               |
-| │   └── tilesets/   | Tilesets for maps                          |
-| ├── icons/          | Icons for UI and other elements            |
-| └── fonts/          | Fonts used in the game                     |
-| **maps/**           | Map data and generators                    |
-| ├── generated/      | Maps generated during gameplay             |
-| ├── templates/      | Map templates and layout definitions       |
-| └── map_generator.py| Scripts for procedural map generation      |
-| **scenes/**         | Scene files                                |
-| ├── main_menu.tscn  | Main menu scene                            |
-| ├── gameplay.tscn   | Gameplay scene                             |
-| ├── pause_menu.tscn | Pause menu scene                           |
-| └── game_over.tscn  | Game over scene                            |
-| **src/**            | Source code                                |
-| ├── core/           | Core game logic                            |
-| │   ├── game_controller.py | Manages the overall game state       |
-| │   └── entity_handler.py  | Manages entities (players, enemies, items)|
-| ├── entities/       | Entity definitions                         |
-| │   ├── player.py   | Player class and related logic             |
-| │   ├── enemy.py    | Enemy class and related logic              |
-| │   └── item.py     | Item class and related logic               |
-| ├── systems/        | Game systems                               |
-| │   ├── ai_system.py| AI logic for enemies                       |
-| │   ├── inventory_system.py | Item inventory management            |
-| │   └── combat_system.py   | Combat logic                           |
-| ├── utilities/      | Utility scripts and helpers               |
-| │   ├── math_utils.py   | Mathematical utilities                  |
-| │   └── file_utils.py   | File handling utilities                  |
-| └── config/         | Configuration files                        |
-|     ├── game_settings.json | General game settings                |
-|     └── controls.json    | Player control mappings                 |
-| **scripts/**        | Additional scripts                         |
-| ├── map_scripts.py  | Scripts for map-related tasks              |
-| └── asset_importer.py | Script for importing assets               |
-| **docs/**           | Documentation                               |
-| ├── design.md       | Design documents                           |
-| ├── architecture.md | Architecture overview                     |
-| └── user_manual.md  | User manual                                |
-| **.gitignore**      | Git ignore file                            |
-| **.gitattributes**  | Git attributes file                        |
-| **README.md**       | Project overview and instructions          |
-| **project.godot**   | Godot project file                         |
+**ChronoCrusaders/**
+- **assets/**  
+  - **audio/**  
+  - **sprites/**  
+    - **players/**  
+    - **enemies/**  
+    - **items/**  
+    - **tilesets/**  
+  - **icons/**  
+  - **fonts/**  
+
+- **maps/**  
+  - **generated/**  
+  - **templates/**  
+  - **map_generator.py**  
+
+- **scenes/**  
+  - **main_menu.tscn**  
+  - **gameplay.tscn**  
+  - **pause_menu.tscn**  
+  - **game_over.tscn**  
+
+- **src/**  
+  - **core/**  
+    - **game_controller.py**  
+    - **entity_handler.py**  
+  - **entities/**  
+    - **player.py**  
+    - **enemy.py**  
+    - **item.py**  
+  - **systems/**  
+    - **ai_system.py**  
+    - **inventory_system.py**  
+    - **combat_system.py**  
+  - **utilities/**  
+    - **math_utils.py**  
+    - **file_utils.py**  
+  - **config/**  
+    - **game_settings.json**  
+    - **controls.json**  
+
+- **scripts/**  
+  - **map_scripts.py**  
+  - **asset_importer.py**  
+
+- **docs/**  
+  - **design.md**  
+  - **architecture.md**  
+  - **user_manual.md**  
+
+- **.gitignore**  
+- **.gitattributes**  
+- **README.md**  
+- **project.godot**
