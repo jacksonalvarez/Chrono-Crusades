@@ -73,6 +73,7 @@ ChronoCrusaders/
 ├── .gitattributes
 ├── README.md
 └── project.godot
+```
 
 ---
 ##BREAKDOWN OF FILE STRUCT::
