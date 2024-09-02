@@ -24,8 +24,7 @@ Welcome to the Chrono Crusaders project! This section provides an overview of th
 
 ## Project Structure
 
-Here’s an overview of the project's directory structure:
----
+
 
 ## Assets
 
