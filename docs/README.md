@@ -37,6 +37,8 @@ ChronoCrusaders/
 │   │   └── tilesets/
 │   ├── icons/
 │   └── fonts/
+```
+
 ## Assets
 
 **`assets/`**: Contains all media assets used in the game.
