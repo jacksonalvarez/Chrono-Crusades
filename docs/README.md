@@ -22,9 +22,61 @@ Welcome to the Chrono Crusaders project! This section provides an overview of th
 
 ---
 
-## Project Structure
+## Complete Project Structure
 
+```plaintext
+ChronoCrusaders/
+├── assets/
+│   ├── audio/
+│   ├── sprites/
+│   │   ├── players/
+│   │   ├── enemies/
+│   │   ├── items/
+│   │   └── tilesets/
+│   ├── icons/
+│   └── fonts/
+├── maps/
+│   ├── generated/
+│   ├── templates/
+│   └── map_generator.py
+├── scenes/
+│   ├── main_menu.tscn
+│   ├── gameplay.tscn
+│   ├── pause_menu.tscn
+│   └── game_over.tscn
+├── src/
+│   ├── core/
+│   │   ├── game_controller.py
+│   │   └── entity_handler.py
+│   ├── entities/
+│   │   ├── player.py
+│   │   ├── enemy.py
+│   │   └── item.py
+│   ├── systems/
+│   │   ├── ai_system.py
+│   │   ├── inventory_system.py
+│   │   └── combat_system.py
+│   ├── utilities/
+│   │   ├── math_utils.py
+│   │   └── file_utils.py
+│   └── config/
+│       ├── game_settings.json
+│       └── controls.json
+├── scripts/
+│   ├── map_scripts.py
+│   └── asset_importer.py
+├── docs/
+│   ├── design.md
+│   ├── architecture.md
+│   └── user_manual.md
+├── .gitignore
+├── .gitattributes
+├── README.md
+└── project.godot
 
+---
+##BREAKDOWN OF FILE STRUCT::
+---
 
 # Assets
 
