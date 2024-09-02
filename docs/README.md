@@ -59,6 +59,8 @@ ChronoCrusaders/
 
 ---
 
+```plaintext
+ChronoCrusaders/
 ├── maps/
 │   ├── generated/
 │   ├── templates/
@@ -68,9 +70,12 @@ ChronoCrusaders/
 │   ├── gameplay.tscn
 │   ├── pause_menu.tscn
 │   └── game_over.tscn
+```
 
----
+## Maps
 
+```plaintext
+ChronoCrusaders/
 ├── src/
 │   ├── core/
 │   │   ├── game_controller.py
@@ -100,6 +105,7 @@ ChronoCrusaders/
 ├── .gitattributes
 ├── README.md
 └── project.godot
+```
 
 ## Codebase
 
