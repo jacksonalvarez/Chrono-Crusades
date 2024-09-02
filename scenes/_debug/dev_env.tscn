@@ -1,4 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dubtw50fu666p"]
+[gd_scene load_steps=5 format=3 uid="uid://dubtw50fu666p"]
+
+[ext_resource type="PackedScene" uid="uid://bw2ays57n31gg" path="res://scenes/_debug/dev_player.tscn" id="1_1nxec"]
+[ext_resource type="PackedScene" uid="uid://c2eb0qqqide16" path="res://scenes/_debug/wfc_grid.tscn" id="2_j637a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_24cl6"]
 size = Vector2(1920, 50)
@@ -17,26 +20,24 @@ color = Color(0.114416, 0.629912, 0.591488, 1)
 
 [node name="Barriers" type="Node2D" parent="."]
 
-[node name="Area2D" type="Area2D" parent="Barriers"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Barriers"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/StaticBody2D"]
 position = Vector2(960, -20)
 shape = SubResource("RectangleShape2D_24cl6")
 
-[node name="Area2D2" type="Area2D" parent="Barriers"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/Area2D2"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Barriers/StaticBody2D"]
 position = Vector2(960, 1100)
 shape = SubResource("RectangleShape2D_24cl6")
 
-[node name="Area2D3" type="Area2D" parent="Barriers"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/Area2D3"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Barriers/StaticBody2D"]
 position = Vector2(1940, 540)
 shape = SubResource("RectangleShape2D_bkte5")
 
-[node name="Area2D4" type="Area2D" parent="Barriers"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Barriers/Area2D4"]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Barriers/StaticBody2D"]
 position = Vector2(-20, 540)
 shape = SubResource("RectangleShape2D_bkte5")
+
+[node name="Player" parent="." instance=ExtResource("1_1nxec")]
+
+[node name="WFC_Grid" parent="." instance=ExtResource("2_j637a")]
