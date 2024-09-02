@@ -80,3 +80,62 @@ Here’s an overview of the project’s directory structure:
 - **.gitattributes**  
 - **README.md**  
 - **project.godot**
+
+
+Description
+assets/: Contains all media assets including audio files, sprites, icons, and fonts.
+
+audio/: Directory for sound effects and background music.
+sprites/: Contains subdirectories for various sprite types.
+players/: Sprites for player characters.
+enemies/: Sprites for enemy characters.
+items/: Sprites for items in the game.
+tilesets/: Tilesets used for creating maps.
+icons/: Icons used in UI and other parts of the game.
+fonts/: Fonts used in the game.
+maps/: Contains map-related files.
+
+generated/: Maps that are dynamically generated during gameplay.
+templates/: Templates and layout definitions for maps.
+map_generator.py: Script for procedural map generation.
+scenes/: Scene files used in the game.
+
+main_menu.tscn: Main menu scene.
+gameplay.tscn: Scene for gameplay.
+pause_menu.tscn: Scene for the pause menu.
+game_over.tscn: Scene for game over screen.
+src/: Source code for the game.
+
+core/: Core game logic files.
+game_controller.py: Manages overall game state.
+entity_handler.py: Handles entities (players, enemies, items).
+entities/: Definitions for various game entities.
+player.py: Player class and logic.
+enemy.py: Enemy class and logic.
+item.py: Item class and logic.
+systems/: Game systems for AI, inventory, and combat.
+ai_system.py: AI logic for enemies.
+inventory_system.py: Manages item inventories.
+combat_system.py: Handles combat mechanics.
+utilities/: Utility scripts and helpers.
+math_utils.py: Mathematical utilities.
+file_utils.py: File handling utilities.
+config/: Configuration files.
+game_settings.json: General game settings.
+controls.json: Player control mappings.
+scripts/: Additional scripts for map-related tasks and asset importing.
+
+map_scripts.py: Scripts related to map generation and management.
+asset_importer.py: Script for importing assets into the project.
+docs/: Documentation for the project.
+
+design.md: Design documents.
+architecture.md: Architecture overview.
+user_manual.md: User manual.
+.gitignore: Specifies files and directories to be ignored by Git.
+
+.gitattributes: Git attributes file.
+
+README.md: Project overview and instructions.
+
+project.godot: Godot project file.
