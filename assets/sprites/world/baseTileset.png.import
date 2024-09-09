@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4dmfs58r0fhh"
-path="res://.godot/imported/baseTileset.png-a2bf35f4b8adb9ec809511360bb8f597.ctex"
+uid="uid://bmojra610mgnf"
+path="res://.godot/imported/baseTileset.png-c275f601791c8f93a085540f221333e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/baseTileset.png"
-dest_files=["res://.godot/imported/baseTileset.png-a2bf35f4b8adb9ec809511360bb8f597.ctex"]
+source_file="res://assets/sprites/world/baseTileset.png"
+dest_files=["res://.godot/imported/baseTileset.png-c275f601791c8f93a085540f221333e0.ctex"]
 
 [params]
 

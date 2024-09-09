@@ -7,15 +7,18 @@ extends CharacterBody2D
 @export var items: Array[Node2D] = []
 @export var active_item: Array[Node2D] = []
 
+@onready var joystick: Node2D = $"../UI/JoystickNodes/Joystick"
+
 func _ready() -> void:
 	position = Vector2(960, 540)
 
 func _process(_delta: float) -> void:
 	#This top line determines input based on a custom input map
-	var dir = Input.get_vector("Left", "Right", "Up", "Down")
-	if Input.is_action_pressed("Sprint"):
-		velocity = dir * (speed + sprint_diff)
-	else:
-		velocity = dir * speed
-	#The beauty
-	move_and_slide()
+	var dir = joystick.posVec#Input.get_vector("Left", "Right", "Up", "Down")
+	if dir:
+		if Input.is_action_pressed("Sprint"):
+			velocity = dir * (speed + sprint_diff)
+		else:
+			velocity = dir * speed
+		#The beauty
+		move_and_slide()

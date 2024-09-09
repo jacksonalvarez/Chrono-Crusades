@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmbp4lrrsfsoj"]
+
+[ext_resource type="Texture2D" uid="uid://dkqv1wd6y66dv" path="res://assets/sprites/ui/empty_health_bar.png" id="1_77h5s"]
+
+[node name="In_Level_UI" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 0
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/BoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_77h5s")
