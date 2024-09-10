@@ -7,7 +7,7 @@ extends CharacterBody2D
 @export var items: Array[Node2D] = []
 @export var active_item: Array[Node2D] = []
 
-@onready var joystick: Node2D = $"../UI/JoystickNodes/Joystick"
+@onready var joystick: Node2D = $"../UI/In_Level_UI/JoystickNodes/Joystick"
 
 func _ready() -> void:
 	position = Vector2(960, 540)
