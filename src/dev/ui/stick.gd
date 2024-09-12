@@ -40,3 +40,4 @@ func _on_button_button_down() -> void:
 
 func _on_button_button_up() -> void:
 	pressing = false
+	parent.global_position = Vector2(200, 880)
